@@ -5,6 +5,7 @@ import DeleteList from "./components/DeletedList";
 import './index.css';
 
 
+
 const App = () => {
   // DISPLAY
   // INPUT
@@ -62,26 +63,28 @@ const App = () => {
 
   return (
     <main className="mainContainer">
-      
-      <div className="header">
-        <h1>To Do List</h1>
+     <div className="container">
+      <div className="Container">
+        <div className="header">
+           <h1>To Do List</h1>
+        </div>
+
+
+        <div className="Input">
+            <Input addHandler={addHandler} handleClick={handleClick}/>
+        </div>
+
       </div>
 
-      <div className="Container">
-
-        <div className="InputContainer">
-          <Input addHandler={addHandler} handleClick={handleClick}/>
-        </div>
-
         <div className="displayContainer">
-          <Display toDo={toDo} removeHandler={removeHandler} />
+          <Display className="display" toDo={toDo} removeHandler={removeHandler} />
         </div>
-
+      </div>
       <div>
      {/* <DeleteList delete={deletedList}/> */}
      </div>
       
-    </div>
+    
     </main>
   );
   };

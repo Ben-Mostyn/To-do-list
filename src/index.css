@@ -5,39 +5,32 @@
 
 /*Containers/////////////////////*/
 
-.Container {
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 1000px;
-  width: 300px;
-  margin: 10px 10px;
+  background-color: #f1354e;
 }
 
-.inputContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mainContainer {
+.container {
+  border: black solid 4px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
-  height: 940px;
-  width: 1900px;
+  height: 800px;
+  width: 500px;
+  background-color: aliceblue;
 }
 
 .displayContainer {
+  width: 300px;
   display: flex;
-  margin-top: 20px;
-  width: 280px;
-  justify-content: center;
-
-  height: 1000px;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /*input //////////////////////*/
@@ -78,13 +71,13 @@ button:hover {
 .header {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  margin: 20px 0px 20px 0px;
   border: solid 1px;
   width: 300px;
   height: 90px;
   background-color: #f1354e;
   color: aliceblue;
+  border: black 4px solid;
 }
 
 h1 {
@@ -98,6 +91,8 @@ h1 {
 li {
   font-size: 25px;
   list-style: none;
+  margin: 5px;
+  text-decoration: underline;
 }
 
 li button {
