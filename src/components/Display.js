@@ -7,7 +7,7 @@ const Display = ( {toDo, removeHandler} ) => {
              <ul>
         {toDo.map((x, i) => (
           <motion.li key={i}
-          
+          className="list"
           initial={{
             opacity: 0,
             x:-100,
@@ -16,7 +16,7 @@ const Display = ( {toDo, removeHandler} ) => {
           }}
            animate={{
              opacity: 1,
-             color: 'black',
+             color: 'white',
              y: 0,
              x: 100,
              scale: 1

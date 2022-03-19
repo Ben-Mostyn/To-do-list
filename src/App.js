@@ -79,7 +79,9 @@ const App = () => {
       </div>
 
         <div className="displayContainer">
+          
           <Display className="display" toDo={toDo} removeHandler={removeHandler} />
+          
         </div>
       </div>
       <div>
