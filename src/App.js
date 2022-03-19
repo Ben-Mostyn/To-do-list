@@ -3,6 +3,8 @@ import Input from "./components/Input";
 import { useState } from "react";
 import DeleteList from "./components/DeletedList";
 import './index.css';
+import { motion } from 'framer-motion';
+
 
 
 

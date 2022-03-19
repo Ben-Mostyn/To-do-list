@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Arimo";
+  font-weight: 800;
 }
 
 /*Containers/////////////////////*/
@@ -12,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f1354e;
+  background-color: #ffffff;
 }
 
 .container {
@@ -23,14 +25,17 @@
   align-items: center;
   height: 800px;
   width: 500px;
-  background-color: aliceblue;
+  background-color: rgb(122, 182, 251);
 }
 
 .displayContainer {
   width: 300px;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+
+  height: 1200px;
+  flex: wrap;
 }
 
 /*input //////////////////////*/
@@ -47,14 +52,14 @@
   margin: 0px 10px;
   height: 30px;
   width: 80px;
-  background-color: #f1354e;
-  color: aliceblue;
+  background-color: #ffffff;
+  color: rgb(122, 182, 251);
   font-size: 17px;
   border-radius: 8px;
 }
 button {
-  color: aliceblue;
-  background-color: #f1354e;
+  color: rgb(122, 182, 251);
+  background-color: #f8f8f8;
   height: 25px;
   width: 55px;
   border-radius: 8px;
@@ -62,8 +67,8 @@ button {
 }
 
 button:hover {
-  background-color: aliceblue;
-  color: #f1354e;
+  background-color: rgb(122, 182, 251);
+  color: #ffffff;
   transition: ease-out 0.1s;
 }
 
@@ -75,9 +80,8 @@ button:hover {
   border: solid 1px;
   width: 300px;
   height: 90px;
-  background-color: #f1354e;
-  color: aliceblue;
-  border: black 4px solid;
+  background-color: rgb(255, 255, 255);
+  color: rgb(122, 182, 251);
 }
 
 h1 {
@@ -86,6 +90,7 @@ h1 {
   align-items: center;
   font-size: 50px;
   text-decoration: underline;
+  text-shadow: 1px 1px 1px black;
 }
 
 li {
@@ -93,6 +98,7 @@ li {
   list-style: none;
   margin: 5px;
   text-decoration: underline;
+  color: #ffffff;
 }
 
 li button {
