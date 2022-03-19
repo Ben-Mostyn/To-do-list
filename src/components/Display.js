@@ -16,7 +16,7 @@ const Display = ( {toDo, removeHandler} ) => {
           }}
            animate={{
              opacity: 1,
-             color: 'white',
+             color: '#575f64',
              y: 0,
              x: 100,
              scale: 1
@@ -32,7 +32,7 @@ const Display = ( {toDo, removeHandler} ) => {
              color: 'black'
            }}  
              > {x}
-            <button onClick={() => removeHandler(i)}>Done</button>
+            <button className='done' onClick={() => removeHandler(i)}>Done</button>
           </motion.li>
         ))}
       </ul>

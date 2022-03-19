@@ -18,24 +18,37 @@
 }
 
 .container {
-  border: black solid 4px;
+  border: #393e41 solid 4px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   height: 800px;
   width: 500px;
-  background-color: rgb(122, 182, 251);
+  background-color: #63adf2;
+  border-radius: 8px;
 }
 
 .displayContainer {
-  width: 300px;
+  width: 500px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 
   height: 1200px;
-  flex: wrap;
+}
+
+.list {
+  border: white 2px solid;
+  width: 300px;
+  margin: 10px;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.list:nth-child(odd) {
+  border: #575f64 2px solid;
+  background-color: white;
 }
 
 /*input //////////////////////*/
@@ -44,6 +57,7 @@
   height: 30px;
   width: 180px;
   font-size: 20px;
+  padding-left: 5px;
 }
 
 /*Submit Button Style/////////*/
@@ -81,7 +95,8 @@ button:hover {
   width: 300px;
   height: 90px;
   background-color: rgb(255, 255, 255);
-  color: rgb(122, 182, 251);
+  color: #575f64;
+  border-radius: 8px;
 }
 
 h1 {
@@ -94,7 +109,7 @@ h1 {
 }
 
 li {
-  font-size: 25px;
+  font-size: 20px;
   list-style: none;
   margin: 5px;
   text-decoration: underline;
@@ -104,4 +119,6 @@ li {
 
 li button {
   margin-left: 25px;
+  color: rgb(122, 182, 251);
+  background-color: #f8f8f8;
 }
